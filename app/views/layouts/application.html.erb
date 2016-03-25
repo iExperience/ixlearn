@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ixlearn</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iXperience Learning Portal</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="skin-1">
+  <!-- Wrapper-->
+  <div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+      <%= yield %>
+    </div>
+  </div>
+  <!-- End wrapper-->
+  <!-- Include javascript per-view -->
+  <%= javascript_include_tag 'application' %>
+  <script>
+    <% if flash.notice %>
+      toastr.success("", "<%= flash.notice.html_safe %>", { timeOut: "3000" });
+    <% end %>
+    <% if flash.alert %>
+      toastr.error("", "<%= flash.alert.html_safe %>", { timeOut: "7000" });
+    <% end %>
+  </script>
+  <%= yield :javascript %>
 </body>
 </html>

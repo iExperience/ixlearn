@@ -1,0 +1,1 @@
+//= require theme/footable/footable.all.min.js

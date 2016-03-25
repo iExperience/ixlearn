@@ -1,0 +1,9 @@
+//= require theme/iCheck/icheck.min.js
+//= require theme/flot/jquery.flot.js
+//= require theme/flot/jquery.flot.tooltip.min.js
+//= require theme/flot/jquery.flot.resize.js
+//= require theme/flot/jquery.flot.pie.js
+//= require theme/flot/jquery.flot.time.js
+//= require theme/flot/jquery.flot.spline.js
+//= require theme/jvectormap/jquery-jvectormap-2.0.2.min.js
+//= require theme/jvectormap/jquery-jvectormap-world-mill-en.js

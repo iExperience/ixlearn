@@ -1,0 +1,200 @@
+// Base styles. Included on every page. 
+
+// Theme styles
+@import "theme/style";             // Includes Bootstrap, variables, etc. 
+@import "theme/animate/animate";   // Animations.
+@import "theme/forms";             // Forms for applications.
+@import "theme/toastr/toastr.min"; // Toastr notifications
+// Theme variables go in app/assets/stylesheets/theme/base/custom
+// Theme overrides go in app/assets/stylesheets/overrides
+
+// Gems
+@import "font-awesome"; // Icons
+
+// Our styles
+@import "overrides"; // Also includes Bootstrap overrides.
+
+// Custom classes
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Lato, helvetica, sans-serif;
+  font-weight: 300;
+  color: $ix-text-gray;
+
+  &.bg-white {
+    background-color: white;
+  }
+}
+h1, h2, h3, h4, h5, h6, p { 
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0;
+  @include xs { margin-bottom: 20px; }
+}
+h4, h5, h6, p {
+  margin-bottom: 10px;
+  @include xs { margin-bottom: 10px; }
+}
+h1 { 
+  font-size: 60px;
+  @include xs { font-size: 48px; }
+}
+h2 { 
+  font-size: 48px;
+  @include xs { font-size: 36px; }
+}
+h3 { 
+  font-size: 30px;
+  @include xs { font-size: 24px; }
+}
+h4 { 
+  font-size: 24px;
+  @include xs { font-size: 20px; }
+}
+h5 { 
+  font-size: 18px;
+  @include xs { font-size: 16px; }
+}
+h6 { 
+  font-size: 14px;
+  @include xs { font-size: 14px; }
+}
+
+// Utility
+b, .b { font-weight: normal; }
+strong, .strong { font-weight: bold; }
+em, .em { font-style: italic; }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: normal; }
+.uppercase { text-transform: uppercase; }
+.full-height { height: 100%; }
+.full-width { width: 100%; }
+.bordered { border: 1pt solid $border-color; }
+.margin-bottom { margin-bottom: 20px; }
+.margin-top { margin-top: 20px; }
+.padding-bottom { padding-bottom: 20px; }
+.padding-top { padding-top: 20px; }
+.height-auto { height: auto; }
+
+// Backgrounds
+.bg-fixed {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  // Automatically scroll on small screens.
+  @include sm {
+    background-attachment: scroll
+  }
+  &.bg-scroll {
+    background-attachment: scroll
+  }
+  &.bg-footer {
+    // border-top: 1pt solid $border-color;
+    height: 600px;
+  }
+  &.unpad {
+    margin: 0 -15px;
+  }
+}
+.bg-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(black, 0.3);
+  &.light {
+    background-color: rgba(black, 0.1);
+  }
+}
+
+.bg-prospect-index {
+  background-image: asset-url('backgrounds/prospect-index');
+}
+.bg-profile {
+  background-image: asset-url('backgrounds/profile');
+}
+.bg-choose-course {
+  background-image: asset-url('backgrounds/choose-course');
+}
+.bg-course {
+  background-image: asset-url('backgrounds/course');
+}
+
+// Vertical centering code from 
+// https://css-tricks.com/centering-in-the-unknown/
+.image-quote-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 100%;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%; 
+    vertical-align: middle;
+  }
+}
+
+.image-quote {
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  @include xs {
+    width: 90%;
+    font-size: 80%;
+  }
+  .quote {
+    color: #fff;
+    background: rgba(0,0,0,.8);
+    margin: 0;
+    padding: 10px;
+  }
+  .author {
+    background: rgba(255, 255, 255, .9);
+    margin: 0;
+    padding: 10px;
+    font-weight: normal;
+  }
+}
+
+.nav-header .img-circle {
+  width: 70%;
+  @include xs {
+    width: auto;
+  }
+}
+
+.gray-box {
+  @extend .gray-bg;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+// Profile
+.profile-img {
+  width: 120px;
+  padding: 8px;
+  .small {
+    width: 80px;
+  }
+}
+
+.ibox {
+  &.togglable {
+    > .ibox-title {
+      cursor: pointer;
+      @include transition(background-color, 0.2s);
+      &:hover {
+        background-color: #fafafa;
+      }
+    }
+  }
+  &.closed { // Starts out closed.
+    > .ibox-content {
+      display: none;
+    }
+  }
+}

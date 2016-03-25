@@ -1,0 +1,12 @@
+//= require theme/toastr/toastr.min.js
+//= require theme/nestable/jquery.nestable.js
+//= require theme/codemirror/codemirror.js
+//= require theme/codemirror/mode/javascript/javascript.js
+//= require theme/validate/jquery.validate.min.js
+//= require theme/jsTree/jstree.min.js
+//= require theme/diff_match_patch/javascript/diff_match_patch.js
+//= require theme/preetyTextDiff/jquery.pretty-text-diff.min.js
+//= require theme/tinycon/tinycon.min.js
+//= require theme/idle-timer/idle-timer.min.js
+//= require theme/jquery-ui/jquery-ui.min.js
+//= require theme/sweetalert/sweetalert.min.js

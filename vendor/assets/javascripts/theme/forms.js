@@ -1,0 +1,17 @@
+// require theme/iCheck/icheck.min.js
+// require theme/staps/jquery.steps.min.js
+// require theme/validate/jquery.validate.min.js
+// require theme/dropzone/dropzone.js
+// require theme/summernote/summernote.min.js
+// require theme/colorpicker/bootstrap-colorpicker.min.js
+// require theme/cropper/cropper.min.js
+//= require theme/datepicker/bootstrap-datepicker.js
+// require theme/ionRangeSlider/ion.rangeSlider.min.js
+//= require theme/jasny/jasny-bootstrap.min.js
+// require theme/jsKnob/jquery.knob.js
+// require theme/nouslider/jquery.nouislider.min.js
+// require theme/switchery/switchery.js
+//= require theme/chosen/chosen.jquery.js
+// require theme/fullcalendar/moment.min.js
+// require theme/clockpicker/clockpicker.js
+// require theme/daterangepicker/daterangepicker.js

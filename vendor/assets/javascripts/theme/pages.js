@@ -1,0 +1,1 @@
+//= require theme/iCheck/icheck.min.js

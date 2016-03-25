@@ -1,0 +1,1 @@
+//= require theme/video/responsible-video.js

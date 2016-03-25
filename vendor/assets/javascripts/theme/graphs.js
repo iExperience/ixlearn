@@ -1,0 +1,13 @@
+//= require theme/flot/jquery.flot.js
+//= require theme/flot/jquery.flot.tooltip.min.js
+//= require theme/flot/jquery.flot.resize.js
+//= require theme/flot/jquery.flot.pie.js
+//= require theme/flot/jquery.flot.time.js
+//= require theme/flot/jquery.flot.spline.js
+//= require theme/sparkline/jquery.sparkline.min.js
+//= require theme/chartjs/Chart.min.js
+//= require theme/morris/raphael-2.1.0.min.js
+//= require theme/morris/morris.js
+//= require theme/rickshaw/vendor/d3.v3.js
+//= require theme/rickshaw/rickshaw.min.js
+//= require theme/chartist/chartist.min.js

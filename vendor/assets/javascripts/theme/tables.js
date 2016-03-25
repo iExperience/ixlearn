@@ -1,0 +1,10 @@
+//= require theme/iCheck/icheck.min.js
+//= require theme/jeditable/jquery.jeditable.js
+//= require theme/dataTables/jquery.dataTables.js
+//= require theme/dataTables/dataTables.bootstrap.js
+//= require theme/dataTables/dataTables.responsive.js
+//= require theme/dataTables/dataTables.tableTools.min.js
+//= require theme/jqGrid/i18n/grid.locale-el.js
+//= require theme/jqGrid/jquery.jqGrid.min.js
+//= require theme/jquery-ui/jquery-ui.min.js
+//= require theme/footable/footable.all.min.js

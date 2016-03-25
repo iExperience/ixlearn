@@ -1,0 +1,52 @@
+// Variable overrides
+// Variables found in vendor/assets/stylesheets/theme/base/variables
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+
+$font-stack: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+// iX Colors
+$ix-green: #4ABD9B;
+$ix-pink: #F9007A;
+$ix-text-gray: #2e3137;
+$ix-background-gray: #f3f6f8;
+
+// Brand overrides
+$brand-primary: $ix-green;
+$brand-success: $ix-pink;
+$brand-info: $blue;
+$brand-warning: $yellow;
+$brand-danger: $red;
+$btn-default-color: $ix-text-gray;
+
+// Overriding Inspinia. See vendor/assets/stylesheets/theme/base/variables.
+// NOTE: COLOR NAMES DO NOT CORRESPOND TO THE COLORS THEMSELVES. 
+// This is a result of Inspinia hard-coding colors insteady of using 'brand-'
+// naming convention. Eg `blue-bg` is actually pink.
+// For that reason, use `primary-bg`, `info-bg`, etc. 
+$navy: $brand-primary;
+$lazur: $brand-info;
+$blue: $brand-success;
+$yellow: $brand-warning;
+$red: $brand-danger;
+$dark-gray: $btn-default-color;
+
+// Various colors
+$text-color: $ix-text-gray;     // Body text
+$gray: $ix-background-gray;     // Background wrapper color
+$light-gray: #d1dade;           // Default label, badget
+$label-badget-color: #5e5e5e;
+$light-blue: #f3f6fb;
+
+// Images
+$boxed-backgound: image-url("theme/shattered.png");
+// "profil" typo is from theme...smh.
+$nav-profil-pattern: url("theme/header-profile.png");
+
+@mixin xs {
+  @media only screen and (max-width: #{$screen-sm-min - 1}) { @content; }
+}
+@mixin sm {
+  @media only screen and (max-width: #{$screen-md-min - 1}) { @content; }
+}
+@mixin md {
+  @media only screen and (max-width: #{$screen-lg-min - 1}) { @content; }
+}
