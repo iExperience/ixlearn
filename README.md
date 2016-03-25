@@ -1,7 +1,5 @@
 #iXperience Learning Management System
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/3fe0a74a-4166-4205-967a-30d9fa97f990/575093/shields_badge.svg)](https://semaphoreci.com/ixperience/ixstudents)
-
 ### Starting Development
 
 1. Pull/clone the repo.
